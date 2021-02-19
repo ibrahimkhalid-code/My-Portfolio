@@ -1,0 +1,208 @@
+/*************************************************/
+/**************** General CSS ********************/
+/*************************************************/
+* {
+	font-family: sans-serif;
+}
+.container {
+	width: 90%;
+	margin: auto;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+/*************************************************/
+/**************** Recurring Properties ***********/
+/*************************************************/
+.f-c {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.d-in-b {
+	display: inline-block;
+}
+/*************************************************/
+/**************** Home Section *******************/
+/*************************************************/
+.home-sec {
+	height: 100vh;
+	background-color: rgb(17, 85, 85);
+}
+.home-sec-info {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(1, minmax(300px, auto));
+}
+.my-info {
+	padding: 10px;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(2, minmax(100px, auto));
+}
+.my-info-desc {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.my-info-img {
+	width: 150px;
+	height: 150px;
+	background-image: url(../images/my-photo.jpeg);
+	background-position: center;
+	background-size: cover;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+.my-info-name {
+	color: #fff;
+	font-size: 40px;
+	transform: translateX(-100px);
+	-webkit-transform: translateX(-100px);
+	-moz-transform: translateX(-100px);
+	-ms-transform: translateX(-100px);
+	-o-transform: translateX(-100px);
+}
+.my-info-name span {
+	font-size: 20px;
+}
+.my-info-skill {
+	background-color: rgb(150, 11, 192);
+	color: #fff;
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	margin-right: 10px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.my-info-skill:nth-child(1) {
+	animation: skillmove1 0.8s infinite alternate;
+	-webkit-animation: skillmove1 0.8s infinite alternate;
+}
+.my-info-skill:nth-child(2) {
+	animation: skillmove2 0.6s infinite alternate;
+	-webkit-animation: skillmove2 0.6s infinite alternate;
+}
+.my-info-skill:nth-child(3) {
+	animation: skillmove3 0.4s infinite alternate;
+	-webkit-animation: skillmove3 0.4s infinite alternate;
+}
+@keyframes skillmove1 {
+	0% {
+		transform: translateX(0px);
+		-webkit-transform: translateX(0px);
+		-moz-transform: translateX(0px);
+		-ms-transform: translateX(0px);
+		-o-transform: translateX(0px);
+	}
+	100% {
+		transform: translateY(-15px);
+		-webkit-transform: translateY(-15px);
+		-moz-transform: translateY(-15px);
+		-ms-transform: translateY(-15px);
+		-o-transform: translateY(-15px);
+	}
+}
+@keyframes skillmove2 {
+	0% {
+		transform: translateX(0px);
+		-webkit-transform: translateX(0px);
+		-moz-transform: translateX(0px);
+		-ms-transform: translateX(0px);
+		-o-transform: translateX(0px);
+	}
+	100% {
+		transform: translateY(-16px);
+		-webkit-transform: translateY(-16px);
+		-moz-transform: translateY(-16px);
+		-ms-transform: translateY(-16px);
+		-o-transform: translateY(-16px);
+	}
+}
+@keyframes skillmove3 {
+	0% {
+		transform: translateX(0px);
+		-webkit-transform: translateX(0px);
+		-moz-transform: translateX(0px);
+		-ms-transform: translateX(0px);
+		-o-transform: translateX(0px);
+	}
+	100% {
+		transform: translateY(-18px);
+		-webkit-transform: translateY(-18px);
+		-moz-transform: translateY(-18px);
+		-ms-transform: translateY(-18px);
+		-o-transform: translateY(-18px);
+	}
+}
+.my-social a {
+	font-size: 25px;
+	width: 50px;
+	height: 50px;
+	background-color: #fff;
+	margin-right: 10px;
+	color: #000;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-ms-transition: all 0.4s;
+	-o-transition: all 0.4s;
+}
+.s-f:hover {
+	color: #fff;
+	background-color: #385898;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-ms-transition: all 0.4s;
+	-o-transition: all 0.4s;
+}
+.s-t:hover {
+	color: #fff;
+	background-color: rgba(29, 161, 242, 1.00);
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-ms-transition: all 0.4s;
+	-o-transition: all 0.4s;
+}
+.s-g:hover {
+	color: #fff;
+	background-color: #1b1f23;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-ms-transition: all 0.4s;
+	-o-transition: all 0.4s;
+}
+.s-li:hover {
+	color: #fff;
+	background-color: #0a66c2;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-ms-transition: all 0.4s;
+	-o-transition: all 0.4s;
+}
+.s-i:hover {
+	color: #fff;
+	background-color: rgb(64, 93, 230);
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-ms-transition: all 0.4s;
+	-o-transition: all 0.4s;
+}
